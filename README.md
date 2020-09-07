@@ -13,7 +13,7 @@ kustomize build .
 
 3. Create the app:
 ```bash
-argocd app create argocd-kustomize-example-pschmid2 --repo https://github.com/philipschmid/argocd-kustomize-example.git --path example-app --dest-server https://kubernetes.default.svc --dest-namespace pitc-pschmid2-argocd
+argocd app create argocd-kustomize-example-pschmid2 --repo https://github.com/philipschmid/argocd-kustomize-example.git --dest-server https://kubernetes.default.svc --path . --dest-namespace pitc-pschmid2-argocd
 ```
 
 ## Credit
