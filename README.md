@@ -16,5 +16,11 @@ kustomize build .
 argocd app create argocd-kustomize-example-pschmid2 --repo https://github.com/philipschmid/argocd-kustomize-example.git --dest-server https://kubernetes.default.svc --path . --dest-namespace pitc-pschmid2-argocd
 ```
 
+4. Sync app:
+```bash
+argocd app sync argocd-kustomize-example-pschmid2
+argocd app get argocd-kustomize-example-pschmid2
+```
+
 ## Credit
 - https://github.com/argoproj/argocd-example-apps/tree/master/kustomize-guestbook
